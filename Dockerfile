@@ -2,10 +2,10 @@
 FROM python:3.9.1
 
 # defining the working directory
-WORKDIR /python-flask
+WORKDIR /app
 
 # copying the contents
-ADD . /python-flask
+ADD . /app
 
 # run pip to install the dependencies of the flask app
 RUN pip install -r requirements.txt
